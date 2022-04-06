@@ -1,0 +1,528 @@
+:root {
+  --ff-1: 'Aeroport', sans-serif;
+
+}
+
+.list-reset {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.button--mod-2 {
+  &::before {
+    background-color: #E67A00;
+  }
+
+  span {
+    color: #ffffff;
+  }
+}
+
+.home--advance {
+
+  .title {
+    &::after,
+    &::before {
+      display: none;
+    }
+  }
+  .hero__slider-item {
+    background-image: url(../img2/bg/adv-1.jpg);
+    background-position: top;
+  }
+
+  .hero__text-part {
+    max-width: initial;
+  }
+
+  .hero__text-part--mod {
+    font-family: var(--ff-1);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.33;
+    color: #FFFFFF;
+    margin: 0;
+  }
+
+  .hero__text-list {
+    font-family: var(--ff-1);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 2;
+    color: #FFFFFF;
+    margin: 13px 0;
+    margin-bottom: 64px;
+
+    li {
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding-left: calc(18px + 15px);
+
+      &::after {
+        content: "";
+        display: block;
+        width: 16px;
+        height: 8px;
+        background-image: url(../img2/icons/list-arrow-wh.svg);
+        background-size: cover;
+        position: absolute;
+        left: 0;
+      }
+    }
+
+    .hero--no-slider .hero__slider-top {
+      margin-bottom: 37px;
+    }
+
+  }
+
+  .header .header__wrapper {
+    border-bottom: none;
+  }
+
+  .hero--no-slider .breadcrumbs {
+    padding-top: 135px;
+    padding-bottom: 35px;
+  }
+
+  .content__links-wrapper {
+    margin: 0;
+  }
+
+  .promo::before {
+    display: none;
+  }
+
+  .button-round:hover:after {
+    pointer-events: none;
+  }
+}
+
+// декоративная линия с ссылкой на запись на конференцию под шапкой 
+.decorate-line {
+  background: #E67A00;
+  font-family: var(--ff-1);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+  padding: 8px 0;
+
+  p {
+    margin: 0;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+  }
+
+  a {
+    color: #FECD00;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    transition: all 0.2s;
+    font-family: var(--ff-1);
+    position: relative;
+    padding-right: 34px;
+
+    &:hover {
+      color: #ffffff;
+    }
+
+    svg {
+      margin-top: 3px;
+      position: absolute;
+      right: 0;
+    }
+  }
+}
+
+
+// что вы получите 
+
+.what-you-get {
+  padding: 85px 0;
+  background-color: #A47B67;
+  color: #ffffff;
+  background-image: url(../img2/bg/adv-2.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  &::after {
+    content: "";
+    background: linear-gradient(0deg, rgba(43, 27, 20, 0.3), rgba(43, 27, 20, 0.3));
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+  }
+
+  .wrapper {
+    position: relative;
+    z-index: 10;
+  }
+
+  &__title {
+    font-family: var(--ff-1);
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 1.1;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 43px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    margin-bottom: 36px;
+
+    li {
+      width: calc((100% /3) - 22px);
+      position: relative;
+      padding-top: 56px;
+
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        top: 0;
+        left: 0;
+        background-image: url(../img2/logo/1.svg);
+      }
+    }
+
+    span {
+      display: inline-block;
+      margin-bottom: 28px;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 1.3;
+    }
+
+    p {
+      margin: 0;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 1.4;
+    }
+
+  }
+
+  .content__links-wrapper {
+    justify-content: flex-end;
+    margin-bottom: 120px;
+  }
+}
+
+.video-box {
+  width: 1088px;
+  height: 608px;
+  margin: 0 auto;
+  background-color: #C38225;
+  background-image: url(../img2/bg/video-1.jpg);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  overflow: hidden;
+  // transform: translate(0px, 150px);
+  margin-bottom: -406px;
+  position: relative;
+
+  .button {
+    border-radius: 50%;
+    max-width: initial;
+    width: 96px;
+    height: 96px;
+    background-color: transparent;
+
+    &::before {
+      border-radius: 50%;
+      border-color: #E67A00;
+      background-color: #E67A00;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+// преимущества авансирования 
+.advant-advances {
+  padding: 368px 0 114px;
+  background-color: #6B3012;
+  color: #ffffff;
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: space-between;
+  }
+
+  .title {
+    color: #ffffff;
+    max-width: 640px;
+    margin: 0;
+    padding: 0;
+    font-family: var(--ff-1);
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 1.1;
+  }
+
+  &__wrap {
+    max-width: 528px;
+  }
+
+  ol {
+    margin: 0;
+    margin-bottom: 38px;
+    margin-left: 0;
+    margin-top: 19px;
+    padding-left: 30px;
+
+    li {
+      margin-bottom: 12px;
+
+      &::marker {
+        color: #E67A00;
+      }
+    }
+  }
+}
+
+// модалка с видео
+
+.modal-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal--video {
+  max-width: max-content;
+  width: initial;
+  height: max-content;
+  top: initial;
+  right: initial;
+  margin: auto;
+  padding: 10px;
+  overflow: visible;
+
+  .modal-close {
+    top: -55px;
+    right: -55px;
+  }
+}
+
+// простой контент 
+.simple-cont {
+  padding: 85px 0 118px;
+
+  .title {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 34px;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 1.11;
+
+    &--mod {
+      margin-bottom: 8px;
+    }
+  }
+
+  .subtitle {
+    font-family: var(--ff-1);
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 1.25;
+    color: #2B1B14;
+    max-width: 1088px;
+    margin: 0 auto;
+    margin-bottom: 56px;
+  }
+
+  &__flex-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 46px 32px;
+
+    li {
+      width: calc((100% / 3) - 22px);
+    }
+
+    img {
+      display: block;
+      margin-bottom: 18px;
+    }
+
+    p {
+      margin: 0;
+      color: #554943;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 1.4;
+    }
+  }
+
+  &__list {
+    max-width: 1087px;
+    margin: 0 auto;
+  }
+
+  &__item {
+    padding: 29px 0;
+    border-bottom: 1px solid #EAE9E8;
+
+    strong {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 1.33;
+      color: #2B1B14;
+      display: block;
+      margin-bottom: 16px;
+    }
+
+    p {
+      margin: 0;
+      color: #6B605B;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 1.4;
+    }
+
+    
+  }
+
+  &__sublist {
+    margin: 23px 0 0;
+    padding: 0;
+
+    li {
+      list-style: none;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      padding-left: 33px;
+      margin-bottom: 4px;
+
+      &::before {
+        content: "—";
+        position: absolute;
+        left: 0;
+        color: #F8AA2B;
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+// этапы получения средств 
+.steps-funds {
+  padding: 85px 0;
+  background-color: #A47B67;
+  color: #ffffff;
+  background-image: url(../img2/bg/steps-funds-1.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  margin: 0 40px;
+
+  &::after {
+    content: "";
+    background-image: url(../img/bg/texture-plus.svg);
+    position: absolute;
+    width: 50%;
+    height: 27%;
+    top: -14%;
+    right: 1%;
+    z-index: 3;
+    pointer-events: none;
+  }
+
+  .title {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 1.1;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 69px;
+  }
+}
+
+.steps-funds__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 63px 32px;
+  align-items: flex-start;
+
+  li {
+    width: calc((100% / 3) - 22px);
+
+    strong {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 1.3;
+      display: block;
+      margin-bottom: 28px;
+    }
+
+    p {
+      margin: 0;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 1.4;
+    }
+  }
+}
+
+.dec-arrow {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  align-items: center;
+  margin-bottom: 16px;
+
+  span {
+    flex-grow: 2;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 95%;
+      height: 1px;
+      background-color: #fff;
+      z-index: 0;
+      position: absolute;
+      margin-right: auto;
+    }
+  }
+
+  svg {
+    margin-left: auto;
+    display: block;
+    position: relative;
+    z-index: 2;
+  }
+}
