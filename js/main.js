@@ -90,22 +90,3 @@ logotypeLink.addEventListener('mouseout', function (e) {
   footerLogo.src = 'img/logo-rus--wh.svg';
 });
 
-
-// const anchors = document.querySelectorAll('.ancor');
-
-// const test = anchors.getBoundingClientRect();
-// console.log(test.top);
-
-// for (let anchor of anchors) {
-//   anchor.addEventListener('click', function (e) {
-//     e.preventDefault()
-    
-//     const blockID = anchor.getAttribute('href');
-    
-//     document.querySelector(blockID).scrollIntoView({
-//       behavior: 'smooth',
-//       block: 'center'
-//     });
-//   })
-// }
-

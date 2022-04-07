@@ -22,7 +22,7 @@
 }
 
 .home--advance .hero__slider-item {
-  background-image: url(../img/bg/adv-1.jpg);
+  background-image: url(../img/bg/advance.jpg);
   background-position: top;
 }
 
@@ -152,7 +152,7 @@
   padding: 85px 0;
   background-color: #A47B67;
   color: #ffffff;
-  background-image: url(../img/bg/adv-2.jpg);
+  background-image: url(../img/bg/advance-two.jpg);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
