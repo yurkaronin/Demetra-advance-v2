@@ -751,6 +751,7 @@
   .home--advance .hero__slider-item {
     background-image: url(../img/bg/advance-1024.jpg);
   }
+
   .home--advance {
     .header {
       padding-top: 20px !important;
@@ -883,6 +884,7 @@
   .home--advance .hero__slider-item {
     background-image: url(../img/bg/advance-768.jpg);
   }
+
   .home--advance .breadcrumbs {
     padding-top: 75px !important;
   }
@@ -1035,6 +1037,10 @@
 
     margin-bottom: 6px;
 
+  }
+
+  .home--advance .breadcrumbs {
+    padding-top: 86px !important;
   }
 
 }
