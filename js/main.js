@@ -1,32 +1,27 @@
 "use strict";
 let header = document.querySelector('.header');
-// прилипающая шапка со сменным лого в зависимости от того какая сейчас страница
-window.onscroll = function showHeader() {
-  
-  let headerLogo = document.querySelector('.logo__image');
-
-  if (window.pageYOffset > header.offsetHeight) {
-    header.classList.add('sticky');
-    headerLogo.src = 'img/trademark.svg';
-
-  } else {
-    header.classList.remove('sticky');
-    if (document.body.classList.contains('home')) {
-      headerLogo.src = 'img/logo-rus--wh.svg';
-    } else {
-      headerLogo.src = 'img/logo-rus.svg';
-    }
-  }
-}
-
+// let test = header.style.height;
 // динамическая высота шапки сайта и соответствующий верхний padding в main 
-const headerHeight = header.offsetHeight;
-document.querySelector(':root').style.setProperty('--header-height', `${headerHeight}px`);
+let headerLogo = document.querySelector('.logo__image');
+let menuButton = document.querySelector('.button-menu');
+
+document.addEventListener("DOMContentLoaded", () => {
+  window.addEventListener('scroll', function () {
+    if (window.pageYOffset > header.offsetHeight) {
+      header.classList.add('sticky');
+      headerLogo.src = 'img/trademark.svg';
+    } else {
+      header.classList.remove('sticky');
+      headerLogo.src = 'img/logo-rus--wh.svg';
+    }
+  });
+});
+
+
+
+// прилипающая шапка со сменным лого в зависимости от того какая сейчас страница
 
 // кнопка меню
-var menuButton = document.querySelector('.button-menu');
-var headerLogo = document.querySelector('.logo__image');
-
 if (menuButton) {
   menuButton.addEventListener('click', function (r) {
     document.body.classList.toggle('custom-lock');
@@ -37,16 +32,16 @@ if (menuButton) {
 }
 
 // Подмена лого в шапке, при открытом мобильном меню
-if (document.body.classList.contains('home')) {
-  menuButton.addEventListener('click', function (е) {
-    if (menuButton.classList.contains('active')) {
-      headerLogo.src = 'img/logo-rus.svg';
-    } else {
-        headerLogo.src = 'img/logo-rus--wh.svg';
-      }
 
-  });
-}
+menuButton.addEventListener('click', function (е) {
+  if (menuButton.classList.contains('active')) {
+    headerLogo.src = 'img/logo-rus.svg';
+  } else {
+    headerLogo.src = 'img/logo-rus--wh.svg';
+  }
+
+});
+
 
 
 // плавный скролл по страницам
@@ -89,4 +84,3 @@ logotypeLink.addEventListener('mouseover', function (e) {
 logotypeLink.addEventListener('mouseout', function (e) {
   footerLogo.src = 'img/logo-rus--wh.svg';
 });
-
