@@ -22,7 +22,7 @@
 }
 
 .home--advance .hero__slider-item {
-  background-image: url(../img2/bg/adv-1.jpg);
+  background-image: url("../img2/bg/adv-1.jpg");
   background-position: top;
 }
 
@@ -61,7 +61,7 @@
   display: block;
   width: 16px;
   height: 8px;
-  background-image: url(../img2/icons/list-arrow-wh.svg);
+  background-image: url("../img2/icons/list-arrow-wh.svg");
   background-size: cover;
   position: absolute;
   left: 0;
@@ -135,7 +135,7 @@
   padding: 85px 0;
   background-color: #A47B67;
   color: #ffffff;
-  background-image: url(../img2/bg/adv-2.jpg);
+  background-image: url("../img2/bg/adv-2.jpg");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -190,7 +190,7 @@
   height: 40px;
   top: 0;
   left: 0;
-  background-image: url(../img2/logo/1.svg);
+  background-image: url("../img2/logo/1.svg");
 }
 
 .what-you-get__list span {
@@ -218,7 +218,7 @@
   height: 608px;
   margin: 0 auto;
   background-color: #C38225;
-  background-image: url(../img2/bg/video-1.jpg);
+  background-image: url("../img2/bg/video-1.jpg");
   color: #ffffff;
   display: flex;
   align-items: center;
@@ -416,7 +416,7 @@
   padding: 85px 0;
   background-color: #A47B67;
   color: #ffffff;
-  background-image: url(../img2/bg/steps-funds-1.jpg);
+  background-image: url("../img2/bg/steps-funds-1.jpg");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -426,7 +426,7 @@
 
 .steps-funds::after {
   content: "";
-  background-image: url(../img/bg/texture-plus.svg);
+  background-image: url("../img/bg/texture-plus.svg");
   position: absolute;
   width: 50%;
   height: 27%;
